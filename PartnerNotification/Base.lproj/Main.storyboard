@@ -65,13 +65,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生年月日を教えてください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axN-mE-5Vk">
-                                <rect key="frame" x="10" y="248" width="394" height="21"/>
+                                <rect key="frame" x="10" y="138" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="hBY-ap-5Gn">
+                                <rect key="frame" x="10" y="219" width="414" height="216"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-2524568400">
+                                    <!--1921-01-01 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="ja_JP"/>
+                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUD-lP-Gqf">
-                                <rect key="frame" x="10" y="369" width="394" height="30"/>
+                                <rect key="frame" x="10" y="465" width="394" height="30"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="次へ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -84,10 +91,15 @@
                         <viewLayoutGuide key="safeArea" id="rKz-3i-szA"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iUD-lP-Gqf" firstAttribute="top" secondItem="axN-mE-5Vk" secondAttribute="bottom" constant="100" id="2nO-LU-0Vu"/>
-                            <constraint firstItem="axN-mE-5Vk" firstAttribute="top" secondItem="rKz-3i-szA" secondAttribute="top" constant="160" id="7zF-AG-3Iv"/>
+                            <constraint firstItem="hBY-ap-5Gn" firstAttribute="trailing" secondItem="rKz-3i-szA" secondAttribute="trailing" constant="10" id="7Ax-Fd-AZI"/>
+                            <constraint firstItem="axN-mE-5Vk" firstAttribute="top" secondItem="rKz-3i-szA" secondAttribute="top" constant="50" id="7zF-AG-3Iv"/>
                             <constraint firstItem="axN-mE-5Vk" firstAttribute="leading" secondItem="rKz-3i-szA" secondAttribute="leading" constant="10" id="UoS-cS-dad"/>
+                            <constraint firstItem="iUD-lP-Gqf" firstAttribute="top" secondItem="hBY-ap-5Gn" secondAttribute="bottom" constant="30" id="VN0-Gp-ZJ9"/>
+                            <constraint firstItem="iUD-lP-Gqf" firstAttribute="centerX" secondItem="Ci7-ff-2X1" secondAttribute="centerX" id="Vuh-X5-cZd"/>
                             <constraint firstItem="rKz-3i-szA" firstAttribute="trailing" secondItem="axN-mE-5Vk" secondAttribute="trailing" constant="10" id="Xl3-2V-otv"/>
+                            <constraint firstItem="hBY-ap-5Gn" firstAttribute="centerX" secondItem="Ci7-ff-2X1" secondAttribute="centerX" id="oZC-OX-4Ny"/>
+                            <constraint firstItem="hBY-ap-5Gn" firstAttribute="top" secondItem="axN-mE-5Vk" secondAttribute="bottom" constant="60" id="qFO-c4-atd"/>
+                            <constraint firstItem="hBY-ap-5Gn" firstAttribute="leading" secondItem="rKz-3i-szA" secondAttribute="leading" constant="10" id="vvQ-zy-3TA"/>
                             <constraint firstItem="rKz-3i-szA" firstAttribute="trailing" secondItem="iUD-lP-Gqf" secondAttribute="trailing" constant="10" id="w97-Fx-3Yj"/>
                             <constraint firstItem="axN-mE-5Vk" firstAttribute="centerX" secondItem="Ci7-ff-2X1" secondAttribute="centerX" id="yDx-Zx-8Xw"/>
                             <constraint firstItem="iUD-lP-Gqf" firstAttribute="leading" secondItem="rKz-3i-szA" secondAttribute="leading" constant="10" id="yaP-CB-dcQ"/>
@@ -108,13 +120,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一番最近の生理開始日はいつですか？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40H-II-hvj">
-                                <rect key="frame" x="10" y="248" width="394" height="21"/>
+                                <rect key="frame" x="10" y="138" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKv-AO-hYS">
-                                <rect key="frame" x="10" y="369" width="394" height="30"/>
+                                <rect key="frame" x="10" y="571" width="394" height="30"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="次へ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -123,17 +135,25 @@
                                     <segue destination="xj7-Zk-m2q" kind="show" id="XwL-di-r85"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="bOp-nX-bfc">
+                                <rect key="frame" x="10" y="189" width="394" height="352"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pap-R8-mF1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="bOp-nX-bfc" firstAttribute="centerX" secondItem="iEN-IB-rWF" secondAttribute="centerX" id="87A-8V-V0i"/>
                             <constraint firstItem="DKv-AO-hYS" firstAttribute="leading" secondItem="pap-R8-mF1" secondAttribute="leading" constant="10" id="Bm7-Yn-yYO"/>
-                            <constraint firstItem="40H-II-hvj" firstAttribute="top" secondItem="pap-R8-mF1" secondAttribute="top" constant="160" id="LXb-xR-wZG"/>
+                            <constraint firstItem="40H-II-hvj" firstAttribute="top" secondItem="pap-R8-mF1" secondAttribute="top" constant="50" id="LXb-xR-wZG"/>
+                            <constraint firstItem="bOp-nX-bfc" firstAttribute="top" secondItem="40H-II-hvj" secondAttribute="bottom" constant="30" id="OCt-NB-NV0"/>
+                            <constraint firstItem="bOp-nX-bfc" firstAttribute="leading" secondItem="pap-R8-mF1" secondAttribute="leading" constant="10" id="XKb-CM-xvJ"/>
+                            <constraint firstAttribute="trailing" secondItem="bOp-nX-bfc" secondAttribute="trailing" constant="10" id="YwU-EJ-356"/>
                             <constraint firstItem="pap-R8-mF1" firstAttribute="trailing" secondItem="40H-II-hvj" secondAttribute="trailing" constant="10" id="caQ-fl-BHx"/>
                             <constraint firstItem="pap-R8-mF1" firstAttribute="trailing" secondItem="DKv-AO-hYS" secondAttribute="trailing" constant="10" id="gjO-EH-JqS"/>
                             <constraint firstItem="40H-II-hvj" firstAttribute="leading" secondItem="pap-R8-mF1" secondAttribute="leading" constant="10" id="m3h-TI-iUe"/>
+                            <constraint firstItem="DKv-AO-hYS" firstAttribute="centerX" secondItem="iEN-IB-rWF" secondAttribute="centerX" id="nhv-S3-XZK"/>
+                            <constraint firstItem="DKv-AO-hYS" firstAttribute="top" secondItem="bOp-nX-bfc" secondAttribute="bottom" constant="30" id="otg-85-Hn6"/>
                             <constraint firstItem="40H-II-hvj" firstAttribute="centerX" secondItem="iEN-IB-rWF" secondAttribute="centerX" id="rKS-6W-Red"/>
-                            <constraint firstItem="DKv-AO-hYS" firstAttribute="top" secondItem="40H-II-hvj" secondAttribute="bottom" constant="100" id="t9V-a4-inl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wGa-c0-uIx"/>
