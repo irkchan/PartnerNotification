@@ -1,13 +1,13 @@
 //
-//  MenuViewController.swift
+//  MenstrualPeriodViewController.swift
 //  PartnerNotification
 //
-//  Created by 吉田なつみ on 2021/11/08.
+//  Created by 吉田なつみ on 2021/11/09.
 //
 
 import UIKit
 
-class MenuViewController: UITabBarController {
+class MenstrualPeriodViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  PostViewController.swift
+//  BirthdayViewController.swift
 //  PartnerNotification
 //
 //  Created by 吉田なつみ on 2021/11/09.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PostViewController: UIViewController {
+class BirthdayViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

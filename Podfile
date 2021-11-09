@@ -14,5 +14,6 @@ pod 'RealmSwift','10.11.0'
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
   pod 'FanMenu'
+  pod 'HorizonCalendar'
   
 end

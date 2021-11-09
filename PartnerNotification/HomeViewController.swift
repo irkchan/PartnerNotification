@@ -2,19 +2,38 @@
 //  HomeViewController.swift
 //  PartnerNotification
 //
-//  Created by 吉田なつみ on 2021/11/08.
+//  Created by 吉田なつみ on 2021/11/09.
 //
-
+import HorizonCalendar
 import UIKit
 
-class HomeViewController: UITabBarController {
+class HomeViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    private func makeContent() -> CalendarViewContent {
+      let calendar = Calendar.current
 
-        // Do any additional setup after loading the view.
+      let startDate = calendar.date(from: DateComponents(year: 2020, month: 01, day: 01))!
+      let endDate = calendar.date(from: DateComponents(year: 2021, month: 12, day: 31))!
+
+      return CalendarViewContent(
+        calendar: calendar,
+        visibleDateRange: startDate...endDate,
+        monthsLayout: .vertical(options: VerticalMonthsLayoutOptions()))
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        let calendarView = CalendarView(initialContent: makeContent())
+        view.addSubview(calendarView)
+        calendarView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+          calendarView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
+          calendarView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
+          calendarView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
+          calendarView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
+        ])
+    }
 
     /*
     // MARK: - Navigation

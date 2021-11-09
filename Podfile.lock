@@ -356,6 +356,7 @@ PODS:
     - gRPC-Core/Interface (= 1.28.2)
   - gRPC-Core/Interface (1.28.2)
   - GTMSessionFetcher/Core (1.7.0)
+  - HorizonCalendar (1.10.1)
   - leveldb-library (1.22.1)
   - Macaw (0.9.9):
     - SWXMLHash
@@ -383,6 +384,7 @@ DEPENDENCIES:
   - Firebase/Firestore
   - Firebase/Storage
   - FirebaseUI/Storage
+  - HorizonCalendar
   - RealmSwift (= 10.11.0)
 
 SPEC REPOS:
@@ -406,6 +408,7 @@ SPEC REPOS:
     - "gRPC-C++"
     - gRPC-Core
     - GTMSessionFetcher
+    - HorizonCalendar
     - leveldb-library
     - Macaw
     - nanopb
@@ -435,6 +438,7 @@ SPEC CHECKSUMS:
   "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
+  HorizonCalendar: ad2b6592843777d1120f438bcb67ccac3800df05
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   Macaw: d683339ff44d49c16776ec2bde7aecfd4ba2a3a4
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
@@ -444,6 +448,6 @@ SPEC CHECKSUMS:
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
   SWXMLHash: 9d851ed3edf48ec2bd0db98f0cda0ad4136d75e3
 
-PODFILE CHECKSUM: 1b89052b197dfafa8c926bf3f25e477023a1d192
+PODFILE CHECKSUM: fd37bae86f3c1411cd4a1933371d356a54ca1d7e
 
 COCOAPODS: 1.11.2

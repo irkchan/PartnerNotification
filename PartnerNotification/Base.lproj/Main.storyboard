@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aAR-EV-9cX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tsk-yK-GlI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -8,151 +8,349 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="IdP-FV-8Pv">
+        <!--Login View Controller-->
+        <scene sceneID="sbE-9G-pjx">
             <objects>
-                <viewController id="Rbg-FN-dnD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cS5-6I-3de">
+                <viewController storyboardIdentifier="Login" id="AxX-je-qFq" customClass="LoginViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0GV-Kk-pQc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xMZ-1k-tjc">
-                                <rect key="frame" x="159" y="108" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="paA-XU-gJu">
-                                <rect key="frame" x="159" y="176" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9lq-Ea-pRU">
-                                <rect key="frame" x="159" y="235" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-dp-tOU">
-                                <rect key="frame" x="184" y="301" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hm9-VV-ekE">
-                                <rect key="frame" x="184" y="339" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたはどちらですか？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BW-Qk-7aT">
+                                <rect key="frame" x="10" y="248" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="G32-WW-M9X">
+                                <rect key="frame" x="73" y="368.5" width="268" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVs-qH-Fg1">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="30"/>
+                                        <state key="normal" title="通知を受ける側"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnI-dj-tg1">
+                                        <rect key="frame" x="191" y="0.0" width="77" height="30"/>
+                                        <state key="normal" title="管理する側"/>
+                                        <connections>
+                                            <segue destination="RyE-zr-zYo" kind="show" id="ZBf-G4-b7F"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ewk-sG-L2v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ewk-sG-L2v" firstAttribute="trailing" secondItem="8BW-Qk-7aT" secondAttribute="trailing" constant="10" id="Jhq-LU-PJI"/>
+                            <constraint firstItem="G32-WW-M9X" firstAttribute="centerX" secondItem="0GV-Kk-pQc" secondAttribute="centerX" id="Kh4-6S-nYm"/>
+                            <constraint firstItem="8BW-Qk-7aT" firstAttribute="centerX" secondItem="0GV-Kk-pQc" secondAttribute="centerX" id="Qx9-kI-F6Z"/>
+                            <constraint firstItem="G32-WW-M9X" firstAttribute="top" secondItem="8BW-Qk-7aT" secondAttribute="bottom" constant="100" id="Yeq-LG-RlD"/>
+                            <constraint firstItem="8BW-Qk-7aT" firstAttribute="top" secondItem="ewk-sG-L2v" secondAttribute="top" constant="160" id="pxa-xJ-vXt"/>
+                            <constraint firstItem="8BW-Qk-7aT" firstAttribute="leading" secondItem="ewk-sG-L2v" secondAttribute="leading" constant="10" id="tVe-DM-iYg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ugy-ak-Ea0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pdf-n1-u9z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2200" y="-699.10714285714278"/>
+        </scene>
+        <!--Birthday View Controller-->
+        <scene sceneID="ilM-he-hxV">
+            <objects>
+                <viewController storyboardIdentifier="Birthday" id="RyE-zr-zYo" customClass="BirthdayViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ci7-ff-2X1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生年月日を教えてください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axN-mE-5Vk">
+                                <rect key="frame" x="10" y="248" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUD-lP-Gqf">
+                                <rect key="frame" x="10" y="369" width="394" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="次へ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="V3r-7o-5Jv" kind="show" id="bps-3I-rPm"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="xtJ-bf-cXJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="rKz-3i-szA"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iUD-lP-Gqf" firstAttribute="top" secondItem="axN-mE-5Vk" secondAttribute="bottom" constant="100" id="2nO-LU-0Vu"/>
+                            <constraint firstItem="axN-mE-5Vk" firstAttribute="top" secondItem="rKz-3i-szA" secondAttribute="top" constant="160" id="7zF-AG-3Iv"/>
+                            <constraint firstItem="axN-mE-5Vk" firstAttribute="leading" secondItem="rKz-3i-szA" secondAttribute="leading" constant="10" id="UoS-cS-dad"/>
+                            <constraint firstItem="rKz-3i-szA" firstAttribute="trailing" secondItem="axN-mE-5Vk" secondAttribute="trailing" constant="10" id="Xl3-2V-otv"/>
+                            <constraint firstItem="rKz-3i-szA" firstAttribute="trailing" secondItem="iUD-lP-Gqf" secondAttribute="trailing" constant="10" id="w97-Fx-3Yj"/>
+                            <constraint firstItem="axN-mE-5Vk" firstAttribute="centerX" secondItem="Ci7-ff-2X1" secondAttribute="centerX" id="yDx-Zx-8Xw"/>
+                            <constraint firstItem="iUD-lP-Gqf" firstAttribute="leading" secondItem="rKz-3i-szA" secondAttribute="leading" constant="10" id="yaP-CB-dcQ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fqo-jU-gcy"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nfS-k9-AVo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbA-o6-FmL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1329" y="81"/>
+            <point key="canvasLocation" x="-1520.289855072464" y="-699.10714285714278"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Ocy-eG-wV0">
+        <!--Start Menstruation View Controller-->
+        <scene sceneID="mRb-fg-WiM">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aAR-EV-9cX" customClass="TabBarController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tXn-jO-6P6">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="lAg-dy-Om4" kind="relationship" relationship="viewControllers" id="u29-Ty-fwS"/>
-                        <segue destination="zYJ-64-whW" kind="relationship" relationship="viewControllers" id="Yne-dj-vjU"/>
-                        <segue destination="vqj-j4-keK" kind="relationship" relationship="viewControllers" id="lYr-f5-ABR"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c4X-dO-aMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
-        </scene>
-        <!--ホーム-->
-        <scene sceneID="7Yi-42-WKB">
-            <objects>
-                <viewController storyboardIdentifier="Home" id="lAg-dy-Om4" customClass="HomeViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Dvi-cE-bd7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="mso-Bk-FzV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="ホーム" image="house.fill" catalog="system" id="ugD-Jr-JUb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cS6-f0-EQV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-928" y="788"/>
-        </scene>
-        <!--投稿-->
-        <scene sceneID="bJM-NY-WX4">
-            <objects>
-                <viewController storyboardIdentifier="Post" id="zYJ-64-whW" customClass="PostViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mbU-04-N0p">
+                <viewController storyboardIdentifier="StartMenstruation" id="V3r-7o-5Jv" customClass="StartMenstruationViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iEN-IB-rWF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrD-e9-h4O">
-                                <rect key="frame" x="144" y="260" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一番最近の生理開始日はいつですか？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40H-II-hvj">
+                                <rect key="frame" x="10" y="248" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKv-AO-hYS">
+                                <rect key="frame" x="10" y="369" width="394" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="次へ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xj7-Zk-m2q" kind="show" id="XwL-di-r85"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pap-R8-mF1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DKv-AO-hYS" firstAttribute="leading" secondItem="pap-R8-mF1" secondAttribute="leading" constant="10" id="Bm7-Yn-yYO"/>
+                            <constraint firstItem="40H-II-hvj" firstAttribute="top" secondItem="pap-R8-mF1" secondAttribute="top" constant="160" id="LXb-xR-wZG"/>
+                            <constraint firstItem="pap-R8-mF1" firstAttribute="trailing" secondItem="40H-II-hvj" secondAttribute="trailing" constant="10" id="caQ-fl-BHx"/>
+                            <constraint firstItem="pap-R8-mF1" firstAttribute="trailing" secondItem="DKv-AO-hYS" secondAttribute="trailing" constant="10" id="gjO-EH-JqS"/>
+                            <constraint firstItem="40H-II-hvj" firstAttribute="leading" secondItem="pap-R8-mF1" secondAttribute="leading" constant="10" id="m3h-TI-iUe"/>
+                            <constraint firstItem="40H-II-hvj" firstAttribute="centerX" secondItem="iEN-IB-rWF" secondAttribute="centerX" id="rKS-6W-Red"/>
+                            <constraint firstItem="DKv-AO-hYS" firstAttribute="top" secondItem="40H-II-hvj" secondAttribute="bottom" constant="100" id="t9V-a4-inl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wGa-c0-uIx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W12-YE-Y6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-815.94202898550736" y="-699.10714285714278"/>
+        </scene>
+        <!--Menstrual Cycle View Controller-->
+        <scene sceneID="gGO-BI-Erj">
+            <objects>
+                <viewController storyboardIdentifier="Cycle" id="xj7-Zk-m2q" customClass="MenstrualCycleViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KgB-GO-zzh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⽣理がきてから次の⽣理までだいたい何⽇くらいですか？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CY8-dR-PCK">
+                                <rect key="frame" x="10" y="248" width="394" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOk-b1-jcF">
+                                <rect key="frame" x="10" y="389" width="394" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="次へ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qu8-6c-5Fx" kind="show" id="6zR-Ib-CO1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AuS-Gw-txW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DOk-b1-jcF" firstAttribute="leading" secondItem="AuS-Gw-txW" secondAttribute="leading" constant="10" id="0Ly-Sb-e1r"/>
+                            <constraint firstItem="DOk-b1-jcF" firstAttribute="top" secondItem="CY8-dR-PCK" secondAttribute="bottom" constant="100" id="NQs-Gf-Key"/>
+                            <constraint firstItem="CY8-dR-PCK" firstAttribute="top" secondItem="AuS-Gw-txW" secondAttribute="top" constant="160" id="SOu-fP-9hb"/>
+                            <constraint firstItem="AuS-Gw-txW" firstAttribute="trailing" secondItem="DOk-b1-jcF" secondAttribute="trailing" constant="10" id="Ybs-Cf-CDR"/>
+                            <constraint firstItem="AuS-Gw-txW" firstAttribute="trailing" secondItem="CY8-dR-PCK" secondAttribute="trailing" constant="10" id="sMJ-kC-QvW"/>
+                            <constraint firstItem="CY8-dR-PCK" firstAttribute="leading" secondItem="AuS-Gw-txW" secondAttribute="leading" constant="10" id="t84-TZ-6h5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4hO-SM-GW2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OT7-mK-C0u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="-708.48214285714278"/>
+        </scene>
+        <!--Menstrual Period View Controller-->
+        <scene sceneID="u77-lv-dSe">
+            <objects>
+                <viewController storyboardIdentifier="Period" id="qu8-6c-5Fx" customClass="MenstrualPeriodViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wSx-HL-bAq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生理は何日くらい続きますか？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqs-wd-ZpP">
+                                <rect key="frame" x="10" y="248" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jN4-ka-BOO">
+                                <rect key="frame" x="10" y="369" width="394" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="次へ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q7I-3u-uF4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mqs-wd-ZpP" firstAttribute="leading" secondItem="Q7I-3u-uF4" secondAttribute="leading" constant="10" id="3Bs-kA-GJa"/>
+                            <constraint firstItem="Q7I-3u-uF4" firstAttribute="trailing" secondItem="Mqs-wd-ZpP" secondAttribute="trailing" constant="10" id="OUn-Yu-33Y"/>
+                            <constraint firstItem="Q7I-3u-uF4" firstAttribute="trailing" secondItem="jN4-ka-BOO" secondAttribute="trailing" constant="10" id="Ori-zo-Ozc"/>
+                            <constraint firstItem="jN4-ka-BOO" firstAttribute="leading" secondItem="Q7I-3u-uF4" secondAttribute="leading" constant="10" id="rmT-aI-77M"/>
+                            <constraint firstItem="Mqs-wd-ZpP" firstAttribute="top" secondItem="Q7I-3u-uF4" secondAttribute="top" constant="160" id="tqd-pj-UJr"/>
+                            <constraint firstItem="jN4-ka-BOO" firstAttribute="top" secondItem="Mqs-wd-ZpP" secondAttribute="bottom" constant="100" id="wWH-dH-JzU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AR9-dK-yRb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtm-KR-z09" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="-699"/>
+        </scene>
+        <!--ホーム-->
+        <scene sceneID="1NW-mH-O4S">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="ipb-ZS-e8R" customClass="HomeViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nhV-sH-mY2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRF-Dd-18C">
+                                <rect key="frame" x="186" y="243" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uri-US-MR3" customClass="FanMenu" customModule="FanMenu">
-                                <rect key="frame" x="154" y="83" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14j-sv-h7Q">
-                                <rect key="frame" x="72" y="181" width="46" height="30"/>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dvZ-MO-jCX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ホーム" id="8cX-up-X4B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LkM-pO-5OR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-897" y="801"/>
+        </scene>
+        <!--イメージ-->
+        <scene sceneID="j2P-YN-t1X">
+            <objects>
+                <viewController storyboardIdentifier="ImageSelect" id="rtp-kA-Uxa" customClass="ImageSelectViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="igq-1T-Wmn" customClass="FanMenu" customModule="FanMenu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fb0-sv-UTd">
+                                <rect key="frame" x="184" y="230" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UCE-Q1-H8N" customClass="FanMenu" customModule="FanMenu">
+                                <rect key="frame" x="111" y="363" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="hFp-nf-KWc"/>
+                        <viewLayoutGuide key="safeArea" id="Cxe-jo-iVl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="投稿" image="plus.bubble.fill" catalog="system" id="lqw-ZF-BuY"/>
-                    <connections>
-                        <outlet property="colorLabel" destination="FrD-e9-h4O" id="yTa-Lt-dv9"/>
-                        <outlet property="fanMenu" destination="uri-US-MR3" id="0Fd-T6-eyw"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="イメージ" id="GqY-MR-EFh"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uYg-3a-ooc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOA-k6-gyF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="887"/>
+            <point key="canvasLocation" x="56" y="792"/>
         </scene>
-        <!--メニュー-->
-        <scene sceneID="Hns-Bj-ozP">
+        <!--設定-->
+        <scene sceneID="xBf-q3-dGL">
             <objects>
-                <viewController storyboardIdentifier="Menu" id="vqj-j4-keK" customClass="MenuViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3ow-0p-CuE">
+                <viewController storyboardIdentifier="Setting" id="eke-cp-d3c" customClass="SettingViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ynd-6t-E8y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="cu6-YN-f9o"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccB-0o-r4v">
+                                <rect key="frame" x="159" y="206" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xbf-xU-Rj1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="メニュー" image="list.dash" catalog="system" id="95Q-Zr-Omq"/>
+                    <tabBarItem key="tabBarItem" title="設定" id="MEK-os-JlP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SVr-6H-9Gt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1t-Gv-HWz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="803"/>
+            <point key="canvasLocation" x="936" y="792"/>
+        </scene>
+        <!--Tab Bar Controller View Controller-->
+        <scene sceneID="qFP-Ym-psl">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tsk-yK-GlI" customClass="TabBarControllerViewController" customModule="PartnerNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hh2-sk-67E">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ipb-ZS-e8R" kind="relationship" relationship="viewControllers" id="LBg-y4-y5Y"/>
+                        <segue destination="rtp-kA-Uxa" kind="relationship" relationship="viewControllers" id="psT-ze-yPS"/>
+                        <segue destination="eke-cp-d3c" kind="relationship" relationship="viewControllers" id="JEI-vd-BbQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEF-MG-mmr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.072463768115945" y="59.598214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XUQ-1h-UWw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GSs-51-leI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JfP-0n-SH9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemGrayColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AxX-je-qFq" kind="relationship" relationship="rootViewController" id="dqn-0g-J9j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27d-cZ-FNj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3110.144927536232" y="-699.10714285714278"/>
         </scene>
     </scenes>
     <resources>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="list.dash" catalog="system" width="128" height="85"/>
-        <image name="plus.bubble.fill" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
